@@ -1,0 +1,82 @@
+
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Tishuru Resort</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="accomodations.html">Accomodations</a></li>
+          <li><a href="activities.html">Activities</a></li>
+          <li> <a href="contact.html">Contact</a></li>
+          <li> <a href="contacts.html">Contacts</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+        <div id="blanks">
+            <form>
+                <div id="form-group">
+                    <label for="firstname">First Name</label>
+                    <input type="text" class="form-control" id="fname">
+                </div>
+                <div id="form-group">
+                    <label for="secondname">Surname</label>
+                    <input type="text" class="form-control" id="sname">
+                </div>
+                <div id="form-group">
+                    <label for="email">Email</label>
+                    <input type="text"  class="form-control" id="email"> 
+                </div>
+                <div id="form-group">
+                    <label for="phone"> Phone Number</label>
+                    <input type="text" class="form-control" id="phone">
+                </div>
+                <div id="form-group">
+                    <label for="messsages" >Message</label>
+                    <input type="text" class="form-control" id="message" > 
+                </div>
+            <button type="submit" class= "bg-info">Submit</button>
+            </form>
+        </div>
+        <div id="response">
+            <p>
+                Dear <span class="fname"></span> <span class="sname"></span> we have received your message and 
+                will respond as soon as possible either through the email <span class="email"></span> or the phone number
+                <span class="phone"></span> that you have provided. Thank you for your patience
+
+            </p>
+        </div>
+    </div>
+    </body>
+</html>
+
+<!--$(document).ready(function(){
+    $("#blanks").submit(function(event){
+        var fnameInput = $("input#fname").val();
+        var snameInput = $("input#sname").val();
+        var emailInput = $("input#email").val();
+        var phoneInput = $("input#phone").val();
+        var messageInput = $("input#message").val();
+
+        $(".fname").text(fnameInput);
+        $(".sname").text(snameInput);
+        $(".email").text(emailInput);
+        $(".phone").text(phoneInput);
+        $(".message").text(messageInput);
+
+
+        $("#response").show();
+
+        event.preventDefault();
+    });
+
+}); 
+-->
